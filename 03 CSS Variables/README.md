@@ -1,3 +1,6 @@
-CSS Variables with JS Project
+# CSS Variables with JS Project
 
-Update CSS Variables with JS
+The aim of this project is updating CSS Variables with JS.
+
+
+
