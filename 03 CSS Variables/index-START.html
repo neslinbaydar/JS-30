@@ -5,7 +5,7 @@
   <title>Scoped CSS Variables and JS</title>
 </head>
 <body>
-  <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
+  <h2 class="">Update CSS Variables with <span class="h1">JS</span></h2>
 
   <div class="controls">
     <label for="spacing">Spacing:</label>
@@ -18,25 +18,56 @@
     <input id="base" type="color" name="base" value="#ffc600">
   </div>
 
-  <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+  <img src="https://i.pinimg.com/originals/6d/3c/27/6d3c2735a9d1a783bc0452c7f67fbd9a.jpg">
 
   <style>
+      :root{
+        --base:#05af60;
+        --spacig: 10px;
+        --blur: 10px;
+       
+      }
 
-    /*
-      misc styles, nothing to do with CSS variables
-    */
+      img {
+        padding: var(--spacing);
+        background: var(--base);
+        filter:blur(var(--blur));
+     
+       }
+
+        .h1{
+          color: #570404 var(--base);
+        }
+
+        .h2{
+          font-size: 1.5em;
+          font-weight: bold;
+        }
+
+     
+          h2 {
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bolder;
+        }
 
     body {
       text-align: center;
-      background: #193549;
-      color: white;
-      font-family: 'helvetica neue', sans-serif;
+      background: #bcccd6;
+      color: rgb(5, 54, 24);
+      font-family: 'helvetica neue', monospace ;
       font-weight: 100;
       font-size: 50px;
     }
 
+
     .controls {
       margin-bottom: 50px;
+      justify-items: start;
     }
 
     input {
@@ -45,6 +76,15 @@
   </style>
 
   <script>
+    const inputs = document.querySelectorAll('.controls input');
+
+    function handleUpdate(){
+        const suffix = this.dataset.sizing || '';
+        document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+    }
+        
+    inputs.forEach(input =>input.addEventListener('change',handleUpdate));
+    inputs.forEach(input =>input.addEventListener('mousemove',handleUpdate));
   </script>
 
 </body>
