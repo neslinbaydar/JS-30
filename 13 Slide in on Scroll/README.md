@@ -4,6 +4,6 @@
   
   For a page, the **scrollX** and **scrollY** properties return the number of pixels that the document is currently scrolled horizontally and vertically.
   
-  **Demo [here](https://baydarn.github.io/JS-30/13%20Slide%20in%20on%20Scroll/index-START.html)**
+  **Demo [here](https://baydarn.github.io/JS-30/13%20Slide%20in%20on%20Scroll/index.html)**
   
   
