@@ -8,8 +8,10 @@ The aim of this project is using **Local Storage** in the browser and how to use
 
 Using the event delegation requires 3 steps:
 
-**Step 1.** Determine the parent of elements to watch for events
-**Step 2** Attach the event listener to the parent element
-**Step 3** Step 3. Use **event.target** to select the target element
+**Step 1.** Determine the parent of elements to watch for events.
+
+**Step 2** Attach the event listener to the parent element.
+
+**Step 3** Use **event.target** to select the target element.
 
 
