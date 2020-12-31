@@ -14,4 +14,4 @@ Using the event delegation requires 3 steps:
 
 **Step 3** Use **event.target** to select the target element.
 
-
+**Demo [here](https://baydarn.github.io/15%20LocalStorage/index.html)**
