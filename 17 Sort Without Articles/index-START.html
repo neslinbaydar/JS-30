@@ -10,7 +10,7 @@
     body {
       margin: 0;
       font-family: sans-serif;
-      background: url("https://source.unsplash.com/nDqA4d5NL0k/2000x2000");
+      background: url("queen.jpg");
       background-size: cover;
       display: flex;
       align-items: center;
@@ -47,6 +47,24 @@
 
 <script>
 const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
+function strip(bandName){
+  return bandName.replace(/^(a |the |an)/i, '').trim();
+}
+const sortedBands = bands.sort((a,b)=> strip(a)>strip(b) ? 1 : -1); ///third way is 'implicit return'
+
+document.querySelector('#bands').innerHTML = sortedBands
+      .map(band =>`<li>${band}</li>`)
+      .join('');
+  //second way is a ternary:
+  // return strip(a)>strip(b) ? 1 : -1;
+  //first way:
+  // if(strip(a)>strip(b)){
+  //   return 1;
+  // }else{
+  //   return -1;
+  // }
+
+console.log(sortedBands);
 
 
 </script>

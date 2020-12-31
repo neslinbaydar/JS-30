@@ -1,7 +1,10 @@
 html {
   font-size: 10px;
-  background: url('keane.jpg') bottom center;
-  background-size: cover;
+  background: url('keane.jpg') bottom center ;
+  background-size:  100% 100%;
+  background-repeat:no-repeat;
+  background-position:center center;
+  
 }
 
 body,html {
