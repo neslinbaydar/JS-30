@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Videos</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <ul class="videos">
+  <div class="wrap">
+    <h3 class="total"></h3>
+    <ul class="videos">
     <li data-time="5:43">
       Video 1
     </li>
@@ -181,7 +184,30 @@
       Video 58
     </li>
   </ul>
+</div>
 <script>
+    const timeNodes = Array.from(document.querySelectorAll('[data-time]'));
+    const h3 = document.querySelector('h3')
+    const seconds = timeNodes
+    .map(node => node.dataset.time) 
+    .map(timeCode => {
+      const [mins,secs] = timeCode.split(':').map(parseFloat);//convert the dataset.time into minutes and seconds
+      return (mins*60) + secs;  //convert that into whole number of seconds once you have the number
+    })
+    .reduce((total,vidSeconds) => total + vidSeconds); //then finally add it all together 
+
+    let secondsLeft = seconds;
+    const hours = Math.floor(secondsLeft / 3600);
+    secondsLeft = secondsLeft % 3600;
+    //console.log(secondsLeft);
+
+    const mins = Math.floor(secondsLeft / 60);
+    secondsLeft = secondsLeft % 60;
+    console.log(hours,mins,secondsLeft);
+    
+    h3.innerHTML = `Hour = ${hours}   Minute = ${mins}   Second = ${seconds}` ///Here is a total time
+
+
 </script>
 </body>
 </html>
