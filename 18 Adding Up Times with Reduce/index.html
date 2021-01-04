@@ -204,6 +204,8 @@
     const mins = Math.floor(secondsLeft / 60);
     secondsLeft = secondsLeft % 60;
     console.log(hours,mins,secondsLeft);
+    //or we could use below console.log in order to see total time like this =  04:05:01
+    //console.log("Total Time: " + (hours < 10 ? "0" + hours : hours) + ":" + (mins < 10 ? "0" + mins : mins) + ":" + (secondsLeft < 10 ? "0" + secondsLeft : secondsLeft));
     
     h3.innerHTML = `Hour = ${hours}   Minute = ${mins}   Second = ${seconds}` ///Here is a total time
 
