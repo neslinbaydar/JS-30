@@ -1,0 +1,26 @@
+{
+  "name": "js-30",
+  "version": "1.0.0",
+  "description": "https://javascript30.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baydarn/JS-30.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baydarn/JS-30/issues"
+  },
+  "homepage": "https://github.com/baydarn/JS-30#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.1"
+  }
+}
