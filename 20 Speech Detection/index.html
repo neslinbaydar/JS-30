@@ -13,32 +13,32 @@
   window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
   const recognition = new SpeechRecognition();
-  recognition.interimResults = true; //it will get a new <p> tag when we stop speaking.
-
+  recognition.interimResults = true; //It will get a new <p> tag when we stop speaking.
+  recognition.lang = 'en-US';
+  
   let p = document.createElement('p');
   const words = document.querySelector('.words');
   words.appendChild(p);
 
-  recognition.addEventListener('result',e =>{ //we're listening result
-    console.log(e.results);
-    const transcript = Array.from(e.results) //we need to convert an array
-        .map(result => result[0])
-        .map(result => result.transcript)
-        .join('');
+  recognition.addEventListener('result', e => {
+    const transcript = Array.from(e.results)
+      .map(result => result[0])
+      .map(result => result.transcript)
+      .join('');
+    
+       p.textContent = transcript; //when we start talking,we should see it in the DOM.
+       console.log(transcript);
 
-        p.textContent = transcript; //when we start talking we'll see  it in the DOM
-        if(e.results[0].isFinal){
-          p =document.createElement('p');
-          words.appendChild(p);     //we'll overwrite existing p(paragraph) so we dont define p with var.
-        }
-        if(transcript.includes('unicorn')){
-          console.log("🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄")
-        }
+       if (e.results[0].isFinal) {
+        p = document.createElement('p');
+        words.appendChild(p);
+      }
+      if(transcript.includes('unicorn')){ //when we say the word unicorn it triggers it
+        console.log("🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄");
+      }
+    });
 
-        console.log(transcript);
-  });
-
-  recognition.addEventListener('end',recognition.start);
+      recognition.addEventListener('end', recognition.start); //when we start talking after a break it'll start up again that's bcs this "end event" is firing.It's gonna start listening again.
 
   recognition.start();
 
@@ -51,7 +51,7 @@
     }
 
     body {
-      background-image: url("https://storage.tweakreviews.com/gadgets/Speech%20Recognition%20in%20Outlook/Tale%20til%20Tekst.png");
+      background-image: url("data:image/png;base64,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");
       background-size: cover;
       font-family: 'helvetica neue';
       font-weight: 200;
