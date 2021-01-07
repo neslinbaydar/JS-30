@@ -16,6 +16,4 @@ const watchID = navigator.geolocation.watchPosition((position) => {
 ![Adsız1](https://user-images.githubusercontent.com/37474673/103811267-b5ff5900-506d-11eb-9fec-3590c7452f7b.png)
 
 
-PS: For more information please click below link.
-
-**[📌](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API)**
+**[Click for more information](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API)**
