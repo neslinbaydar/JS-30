@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Sticky Nav</title>
-  <link rel="stylesheet" href="style-START.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -14,18 +14,18 @@
   <nav id="main">
     <ul>
       <li class="logo"><a href="#">LOST.</a></li>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Images</a></li>
-      <li><a href="#">Locations</a></li>
-      <li><a href="#">Maps</a></li>
+      <li><a href="#">React</a></li>
+      <li><a href="#">Angular</a></li>
+      <li><a href="#">Vue.js</a></li>
+      <li><a href="#">Node.js</a></li>
+      <li><a href="#">jQuery</a></li>
     </ul>
   </nav>
 
   <div class="site-wrap">
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos.</p>
+    <p>Frameworks have become an essential part of web development, as the standards of web applications are always rising, so does the complexity of the technology needed. It’s completely unreasonable to reinvent the wheel for such sophisticated techniques -assuming that you can reinvent all that. That’s why using frameworks endorsed by thousands of developers around the world is a very sensible approach for building rich and interactive web applications</p>
+    <p>In order to learn all these frameworks,we need to understand concept of JavaScript.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos.</p>
@@ -54,6 +54,21 @@
   </div>
 
 <script>
+
+const nav = document.querySelector('#main');
+const topOfNav = nav.offsetTop;
+
+function fixNav(){
+  if(window.scrollY >= topOfNav){
+    document.body.style.paddingTop = nav.offsetHeight + 'px';
+    document.body.classList.add('fixed-nav');
+  } else{
+    document.body.style.paddingTop = 0;
+    document.body.classList.remove('fixed-nav');
+
+  }
+}
+window.addEventListener('scroll',fixNav);
 
 </script>
 
