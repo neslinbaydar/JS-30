@@ -28,21 +28,38 @@
   }
 
   .one {
-    background: thistle;
+    background: rgb(19, 184, 162);
   }
 
   .two {
-    background: mistyrose;
+    background: rgb(143, 176, 202);
   }
 
   .three {
-    background: coral;
+    background: rgb(17, 98, 163);
   }
 </style>
 
 <button></button>
 <script>
+  const divs = document.querySelectorAll('div');
+  const button = document.querySelector('button');
+  function logText(e){
+    console.log(this.classList.value);
+    //console.log(this);
+    e.stopPropagation(); //stop bubbling this event up.It will no longer trigger events on the parents on the way on up.
 
+  }
+  divs.forEach(div =>div.addEventListener('click',logText,{
+    capture: false,
+    once:true //it run once.it fired all those events but it will never run again until we return the page.
+  }));
+  //browsers will start at the very lowest one which means three.
+  button.addEventListener('click',() => {
+    console.log('This will stop you from clicking at multiple times ✋ ');
+  },{
+    once: true //where we don't wish for someone to click that button more than once.
+  });
 </script>
 </body>
 </html>
