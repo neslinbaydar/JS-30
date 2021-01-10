@@ -16,8 +16,7 @@
         <a href="#">About Me</a>
         <div class="dropdown dropdown1">
           <div class="bio">
-            <img src="https://logo.clearbit.com/wesbos.com">
-            <p>Wes Bos sure does love web development. He teaches things like JavaScript, CSS and BBQ. Wait. BBQ isn't part of web development. It should be though!</p>
+            <p>I am Neslin who likes JavaScript and chocolate.<br>My goal is to become frontend engineer and also travelling all over the world! 👩‍💻✈️🌎<br>PS. She believes in herself 💪 </p>
           </div>
         </div>
       </li>
@@ -37,8 +36,8 @@
             <a href="https://LearnNode.com">Learn Node</a>
           </li>
           <li>
-            <span class="code">STPU</span>
-            <a href="https://SublimeTextBook.com">Sublime Text Power User</a>
+            <span class="code">JS-30</span>
+            <a href="https://courses.wesbos.com/account/access/5eda10679edbdf3638127aa4">JS-30 by WesBos</a>                  
           </li>
           <li>
             <span class="code">WTF</span>
@@ -57,18 +56,18 @@
             <a href="http://CommandLinePowerUser.com">Command Line Power User</a>
           </li>
           <li>
-            <span class="code">MMD</span>
-            <a href="http://MasteringMarkdown.com">Mastering Markdown</a>
+            <span class="code">Vue.js</span>
+            <a href="https://www.udemy.com/course/sifirdan-ileri-seviye-vuejs-2-vuex-vue-router-egitim-seti/?couponCode=ARALIK_1">Learn Vue.js</a>
           </li>
         </ul>
       </li>
       <li>
         <a href="#">Other Links</a>
         <ul class="dropdown dropdown3">
-          <li><a class="button" href="http://twitter.com/wesbos">Twitter</a></li>
-          <li><a class="button" href="http://facebook.com/wesbos.developer">Facebook</a></li>
-          <li><a class="button" href="http://wesbos.com">Blog</a></li>
-          <li><a class="button" href="http://wesbos.com/courses">Course Catalog</a></li>
+          <li><a class="button" href="https://twitter.com/neslinnbaydar">Twitter</a></li>
+          <li><i class="fa fa-linkedin"></i> <a class="button" href="https://www.linkedin.com/in/neslinbaydar/">Linkedln</a></li>
+          <li><i class="fa fa-github-alt"></i> <a class="button" href="https://github.com/baydarn">GitHub</a></li>
+          <li><a class="button" href="https://medium.com/@neslinbaydar">Medium</a></li>
         </ul>
       </li>
     </ul>
@@ -87,12 +86,14 @@
   body {
     margin: 0;
     min-height: 100vh;
-    background:
-      linear-gradient(45deg, hsla(340, 100%, 55%, 1) 0%, hsla(340, 100%, 55%, 0) 70%),
-      linear-gradient(135deg, hsla(225, 95%, 50%, 1) 10%, hsla(225, 95%, 50%, 0) 80%),
-      linear-gradient(225deg, hsla(140, 90%, 50%, 1) 10%, hsla(140, 90%, 50%, 0) 80%),
-      linear-gradient(315deg, hsla(35, 95%, 55%, 1) 100%, hsla(35, 95%, 55%, 0) 70%);
-  }
+    background-image: url("https://blog.adgager.com/wp-content/uploads/2020/11/AAAABcL2iWNIx4vi4cc0PT0PTlMcuXiOrJcg0UujHyeug-6AETl6AmELWTiRI0nzrJ4MyTI-mPSFzuSnLTH63iJyJxMIVp5M-1600x900-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Georgia, serif;
+    font-size: 120%;
+     }
+
 
   h2 {
     margin-top: 0;
@@ -149,12 +150,13 @@
   .trigger-enter-active .dropdown {
     opacity: 1;
   }
+
   
   .dropdownBackground {
     width: 100px;
     height: 100px;
     position: absolute;
-    background: #fff;
+    background: rgb(128, 11, 11);
     border-radius: 4px;
     box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
     transition: all 0.3s, opacity 0.1s, transform 0.2s;
@@ -215,11 +217,43 @@
 
   /* Matches Twitter, TWITTER, twitter, tWitter, TWiTTeR... */
   .button[href*=twitter] { background: #019FE9; }
-  .button[href*=facebook] { background: #3B5998; }
+  .button[href*=Linkedln] { background: #3B5998; }
   .button[href*=courses] { background: #ffc600; }
 </style>
 
 <script>
+  const triggers = document.querySelectorAll('.cool > li');
+  const background = document.querySelector('.dropdownBackground');
+  const nav = document.querySelector('.top');
+
+  function handleEnter(){
+    this.classList.add('trigger-enter');
+    setTimeout(()=> this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'),150);
+    background.classList.add('open');
+
+    const dropdown = this.querySelector('.dropdown'); //selecting the link of mouseenter
+    const dropdownCoords = dropdown.getBoundingClientRect();/// getting coordinates of dropdown
+    const navCoords = nav.getBoundingClientRect();
+
+    const coords = {
+      height: dropdownCoords.height,
+      width: dropdownCoords.width,
+      top:dropdownCoords.top - navCoords.top,
+      left:dropdownCoords.left -navCoords.left,
+    };
+    background.style.setProperty('width', `${coords.width}px`);
+    background.style.setProperty('height',`${coords.height}px`);
+    background.style.setProperty('transform',`translate(${coords.left}px, ${coords.top}px`);
+    
+  }
+
+  function handleLeave(){
+    this.classList.remove('trigger-enter','trigger-enter-active');
+    background.classList.remove('open');
+  }
+
+  triggers.forEach(trigger => trigger.addEventListener('mouseenter',handleEnter));
+  triggers.forEach(trigger => trigger.addEventListener('mouseleave',handleLeave));
 </script>
 
 </body>
