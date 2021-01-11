@@ -6,7 +6,7 @@ The aims of this project are :
 
 🎯 **capture:true** vs **capture:false**
 
-🎯 stopping function from clicking at multiple times with **once:true**
+🎯 stopping function from clicking at multiple times with ```once:true```
 
 [Click for more information🔎](https://www.sitepoint.com/event-bubbling-javascript/#:~:text=Event%20bubbling%20is%20a%20term,a%20click%2C%20for%20example)
 
