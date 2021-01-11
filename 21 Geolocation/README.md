@@ -7,9 +7,9 @@ The aim of this project is using **Geolocation API** we can access location info
 
 **We can define like this:**
 
-```const watchID = navigator.geolocation.watchPosition((position) => {
-  doSomething(position.coords.latitude, position.coords.longitude);
-});```
+>const watchID = navigator.geolocation.watchPosition((position) => {
+   >doSomething(position.coords.latitude, position.coords.longitude);
+>});
 
 ![1](https://user-images.githubusercontent.com/37474673/103811123-7a648f00-506d-11eb-9617-93ff820e8196.png)
 
