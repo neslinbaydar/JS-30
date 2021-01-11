@@ -1,12 +1,12 @@
 # Stripe Follow Along Nav Project
 
-The aim of this project is ability of using **dropdown menu in the navbar**.[Click for more info🔎](https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp)
+The aim of this project is ability of using ```dropdown menu in the navbar```.[Click for more info🔎](https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp)
 
-🎯In order to getting coordinates of the element,we used **getBoundingClientRect()**,
+🎯In order to getting coordinates of the element,we used ```getBoundingClientRect()```,
 
-🎯**opacity and display:hide properties**,
+🎯```opacity``` and ```display:hide properties```,
 
-🎯**mouseenter** and **mouseleave** events to listen hovering the nav.
+🎯```mouseenter``` and ```mouseleave``` events to listen hovering the nav.
 
 # Here is a photo of how it looks :
 
