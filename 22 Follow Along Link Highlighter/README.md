@@ -1,6 +1,6 @@
 # Follow Along Link Highlighter
 
-The aim of this project is about using **getBoundingClientRect()** method and realising differences between **append** vs **appendChild**.
+The aim of this project is about using ```getBoundingClientRect()``` method and realising differences between ```append``` vs ```appendChild```.
 
  **Demo [here](https://baydarn.github.io/JS-30/22%20Follow%20Along%20Link%20Highlighter/index.html)**
  
