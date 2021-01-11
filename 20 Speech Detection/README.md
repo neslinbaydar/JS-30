@@ -1,6 +1,6 @@
 # Speech Detection Project
 
-The aim of this project is about using **speech detection**.
+The aim of this project is about using ```speech detection```.
 
 # Here is a photo of console =>
 
