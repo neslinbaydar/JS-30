@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  background: url('https://source.unsplash.com/NFs6dRTBgaM/2000x2000') fixed;
+  background: url('https://img5.goodfon.com/wallpaper/nbig/7/98/tekstura-texture-kraska-linii-formy-color-colorful.jpg') fixed;
   background-size: cover;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 .items {
-  height: 800px;
+  height: 600px;
   padding: 100px;
   width: 100%;
   border: 1px solid white;
