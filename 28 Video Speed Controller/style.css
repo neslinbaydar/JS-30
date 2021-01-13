@@ -4,11 +4,10 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #4C4C4C url('https://unsplash.it/1500/900?image=1021');
+  background: #240241 url('https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y29sb3JmdWwlMjB3YWxscGFwZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80');
   background-size: cover;
   font-family: sans-serif;
 }
-
 .wrapper {
   width: 850px;
   display: flex;
