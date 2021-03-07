@@ -1,10 +1,10 @@
 # 27 Click and Drag Project 
 
-The aim of this project is 
+**The aim of this project is: **
 
->using ```MouseEvent Properties``` and ```Methods``` for scrolling a element.And I used shorthand for the following CSS properties which are ```overflow-y```, ```overflow-x```.
+⚡️ using ```MouseEvent Properties``` and ```Methods``` for scrolling a element.And I used shorthand for the following CSS properties which are ```overflow-y```, ```overflow-x```.
 
->create a draggable HTML element with JavaScript and CSS
+⚡️ create a draggable HTML element with JavaScript and CSS.
 
 # Here is a photo of how it looks :
 
