@@ -2,7 +2,7 @@
 
 The aim of this project is to use event listener on the keyboard keys.
 
-**Demo [here](https://baydarn.github.io/JS-30/01%20JS%20drum%20kit/index.html)**
+**Demo [here](https://neslinbaydar.gihub.io/JS-30/01%20JS%20drum%20kit/index.html)**
 
 # Here is a photo of how it looks :
 
