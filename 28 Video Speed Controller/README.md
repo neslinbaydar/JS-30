@@ -6,4 +6,4 @@ The aims of this project are ```creating a speed bar``` by calculating the perca
 
 ![1](https://user-images.githubusercontent.com/37474673/104522591-773e4580-560f-11eb-9b45-7aed331d8964.png)
 
- **Demo [here](https://baydarn.github.io/JS-30/28%20Video%20Speed%20Controller/index.html)**
+ **Demo [here](https://neslinbaydar.github.io/JS-30/28%20Video%20Speed%20Controller/index.html)**
