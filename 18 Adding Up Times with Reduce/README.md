@@ -2,7 +2,7 @@
 
 The aim of this project is about using ```reduce``` and ```map``` function to compute total time of the given videos.
 
-**Demo [here](https://baydarn.github.io/JS-30/18%20Adding%20Up%20Times%20with%20Reduce/index.html)**
+**Demo [here](https://neslinbaydar.github.io/JS-30/18%20Adding%20Up%20Times%20with%20Reduce/index.html)**
 
 **Here is a photo of how it looks :**
 
