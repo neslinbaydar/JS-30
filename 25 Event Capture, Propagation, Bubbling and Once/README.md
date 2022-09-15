@@ -15,6 +15,6 @@ The aims of this project are :
 
 ![123](https://user-images.githubusercontent.com/37474673/104109960-0aac0980-52e4-11eb-9029-7ee2f48af304.png)
 
-**Demo [here](https://baydarn.github.io/JS-30/25%20Event%20Capture,%20Propagation,%20Bubbling%20and%20Once/index.html)**
+**Demo [here](https://neslinbaydar.github.io/JS-30/25%20Event%20Capture,%20Propagation,%20Bubbling%20and%20Once/index.html)**
 
 
