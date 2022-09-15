@@ -2,7 +2,7 @@
 
 The aim of this project is sorting HTML elements based on their text content.
 
-**Demo [here](https://baydarn.github.io/JS-30/17%20Sort%20Without%20Articles/index-START.html)**
+**Demo [here](https://neslinbaydar.github.io/JS-30/17%20Sort%20Without%20Articles/index-START.html)**
 
 # Here is a photo of how it looks :
 
