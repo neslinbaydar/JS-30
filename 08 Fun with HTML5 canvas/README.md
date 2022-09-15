@@ -5,4 +5,4 @@ The aim of this project is working on **HTML canvas references** such as **strok
 
 If you wonder how to make a **rainbow-like color** in this project, check this website **https://mothereffinghsl.com/**.
 
-**Demo [here](https://baydarn.github.io/JS-30/08%20Fun%20with%20HTML5%20canvas/index.html)**
+**Demo [here](https://neslinbaydar.github.io/JS-30/08%20Fun%20with%20HTML5%20canvas/index.html)**
