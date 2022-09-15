@@ -10,5 +10,5 @@
 
 ![Adsız](https://user-images.githubusercontent.com/37474673/104508223-f5dbb880-55f8-11eb-8f09-ec8884fb66de.png)
 
-**Demo [here](https://baydarn.github.io/JS-30/27%20Click%20and%20Drag/index.html)**
+**Demo [here](https://neslinbaydar.github.io/JS-30/27%20Click%20and%20Drag/index.html)**
 
