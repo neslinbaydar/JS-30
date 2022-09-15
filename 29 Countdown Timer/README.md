@@ -11,4 +11,4 @@ The aim of this project is when we click a button or write a minute,it is ```mak
 ![11](https://user-images.githubusercontent.com/37474673/104822189-cecbf380-5851-11eb-8b1a-a54831cdfc08.png)
 
 
- **Demo [here](https://baydarn.github.io/JS-30/29%20Countdown%20Timer/index.html)**
+ **Demo [here](https://neslinbaydar.github.io/JS-30/29%20Countdown%20Timer/index.html)**
