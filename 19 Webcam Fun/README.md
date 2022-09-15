@@ -8,4 +8,4 @@ The aim of this project ```taking a photo of the webcam```.Here is a some gains 
 
 🎯using localhost
 
-**Demo [here](https://baydarn.github.io/JS-30/19%20Webcam%20Fun/index.html)**
+**Demo [here](https://neslinbaydar.github.io/JS-30/19%20Webcam%20Fun/index.html)**
