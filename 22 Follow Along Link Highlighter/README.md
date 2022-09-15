@@ -2,7 +2,7 @@
 
 The aim of this project is about using ```getBoundingClientRect()``` method and realising differences between ```append``` vs ```appendChild```.
 
- **Demo [here](https://baydarn.github.io/JS-30/22%20Follow%20Along%20Link%20Highlighter/index.html)**
+ **Demo [here](https://neslinbaydar.github.io/JS-30/22%20Follow%20Along%20Link%20Highlighter/index.html)**
  
  Here is a photo of how it looks :
  
