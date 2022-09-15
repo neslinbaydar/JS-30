@@ -13,4 +13,4 @@ The aim of this project is generating a basic ```Whack A Mole game```.
 ![Adsız](https://user-images.githubusercontent.com/37474673/104851402-d64cd480-5905-11eb-86ef-2f0f452b0660.png)
 
 
- **Demo [here](https://baydarn.github.io/JS-30/30%20Whack%20A%20Mole/index.html)**
+ **Demo [here](https://neslinbaydar.github.io/JS-30/30%20Whack%20A%20Mole/index.html)**
