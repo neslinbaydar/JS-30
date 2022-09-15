@@ -12,5 +12,5 @@ The aim of this project is ability of using ```dropdown menu in the navbar```.[C
 
 ![Adsız](https://user-images.githubusercontent.com/37474673/104138896-8a0b0d00-53b8-11eb-880d-a78ef5d92263.png)
 
-**Demo [here](https://baydarn.github.io/JS-30/26%20Stripe%20Follow%20Along%20Nav/index.html)**
+**Demo [here](https://neslinbaydar.github.io/JS-30/26%20Stripe%20Follow%20Along%20Nav/index.html)**
 
